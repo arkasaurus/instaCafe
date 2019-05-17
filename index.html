@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="formcheck">
+            <h3>
+                <input type="checkbox" class="form-check-input" id="item" value="7.5">Sandwich</input>
+                <span class="price">7.5</span>
+
+            </h3>
+            <p>Lorem, ipsum dolor.</p>
+            <h3>
+                <input type="checkbox" class="form-check-input" id="item" value="5">Fries</input>
+                <span class="price">5</span>
+
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h3>
+                <input type="checkbox" class="form-check-input" id="item" value="15">Burger</input>
+                <span class="price">15</span>
+
+            </h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+
+
+
+            <button type="submit" class="btn btn-primary" id="addToCart" onclick="addUpTotal()">Add to Cart</button>
+
+        </div>
+    </div>
+    <div class="container" id="checkoutBox">
+        <h3>
+            Total Price: <h3 id="totalPriceDisplay"></h3>
+        </h3>
+
+    </div>
+</body>
+
+</html>
