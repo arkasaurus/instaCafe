@@ -4,7 +4,9 @@
 }
 
 /* // clear all the things */
-
+body {
+  background-image: url("https://pinchofyum.com/wp-content/uploads/Couscous-Summer-Salad-Feature-1.jpg")
+}
 
 .price {
     float: right;
@@ -15,9 +17,11 @@
   
   width: 50%;
   margin: 1em auto;
-  border: 1px solid #ddd;
+  border: 2px solid rgb(119, 113, 113);
   padding: 2em;
  border-radius: 20px;
+ background-color: rgb(255, 255, 255, 0.8);
+ filter: blur(30)
  
 }
 
@@ -70,4 +74,7 @@ h3 >   span {
       text-align: left;
     }
 
-
+button {
+  float: right;
+  margin-bottom: 50px;
+}

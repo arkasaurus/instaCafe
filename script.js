@@ -3,7 +3,7 @@
 var items = document.getElementsByClassName('form-check-input')
 
 var totalPrice = 0;
-
+var totalPriceString = ""
 
 
 function addUpTotal() {
@@ -13,11 +13,19 @@ function addUpTotal() {
     }
 
     document.getElementById('totalPriceDisplay').innerHTML = totalPrice
-    console.log(totalPrice)
+    
+    totalPriceString = totalPrice.toString()
+    console.log(totalPriceString)
     totalPrice = 0
+    
 }
 
 console.log(totalPrice)
 
 var addToCartButton = document.getElementById('addToCart')
 // addToCartButton.addEventListener('click', addUpTotal())
+
+function checkOut() {
+    alert("the total comes to" + totalPriceString)
+    totalPrice = 0
+}
